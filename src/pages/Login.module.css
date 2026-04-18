@@ -50,10 +50,15 @@
   letter-spacing: var(--letter-spacing-default);
   color: var(--color-white);
   background: var(--color-button-muted);
+  transition: filter var(--duration-fast) var(--ease-standard);
 }
 
 .submit:hover {
   filter: brightness(0.96);
+}
+
+.submit:active:not(:disabled) {
+  filter: brightness(0.9);
 }
 
 .submit:focus-visible {

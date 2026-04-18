@@ -63,19 +63,31 @@
 .btnPrimary {
   color: var(--color-white);
   background: var(--color-accent);
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    filter var(--duration-fast) var(--ease-standard);
 }
 
 .btnPrimary:hover {
   background: var(--color-accent-hover);
 }
 
+.btnPrimary:active {
+  filter: brightness(0.94);
+}
+
 .btnSecondary {
   color: var(--color-text);
   background: var(--color-accent-soft);
+  transition: filter var(--duration-fast) var(--ease-standard);
 }
 
 .btnSecondary:hover {
   filter: brightness(0.98);
+}
+
+.btnSecondary:active {
+  filter: brightness(0.94);
 }
 
 .btnPrimary:focus-visible,

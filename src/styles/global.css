@@ -13,6 +13,10 @@ html {
   text-size-adjust: 100%;
 }
 
+a[href] {
+  touch-action: manipulation;
+}
+
 body {
   margin: 0;
   height: 100%;
@@ -40,6 +44,7 @@ button {
   font-size: inherit;
   line-height: inherit;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 input,

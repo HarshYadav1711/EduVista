@@ -2,7 +2,7 @@ import { CameraIcon } from '../components/CameraIcon'
 import { PROFILE_BIO, SAMPLE_EMAIL } from '../content/xdCopy'
 import styles from './Profile.module.css'
 
-const PROFILE_IMAGE_SRC = '/profile.jpg'
+const PROFILE_IMAGE_SRC = '/profile.svg'
 
 export default function Profile() {
   return (
@@ -16,9 +16,10 @@ export default function Profile() {
           <img
             className={styles.profileImage}
             src={PROFILE_IMAGE_SRC}
-            alt=""
+            alt="Marry Doe"
             width={72}
             height={72}
+            decoding="async"
           />
           <button type="button" className={styles.camera} aria-label="Change profile photo">
             <CameraIcon className={styles.cameraIcon} />

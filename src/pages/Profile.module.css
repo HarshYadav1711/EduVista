@@ -57,10 +57,15 @@
   justify-content: center;
   background: var(--color-accent);
   color: var(--color-white);
+  transition: background-color var(--duration-fast) var(--ease-standard);
 }
 
 .camera:hover {
   background: var(--color-accent-hover);
+}
+
+.camera:active {
+  filter: brightness(0.94);
 }
 
 .camera:focus-visible {
