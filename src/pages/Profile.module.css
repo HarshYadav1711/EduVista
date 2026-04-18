@@ -1,5 +1,3 @@
-/* Profile — header rule, avatar row, bio, dashed rule (XD) */
-
 .screen {
   flex: 1;
   display: flex;
@@ -27,12 +25,12 @@
   padding: 24px var(--page-gutter) 0;
 }
 
-.avatarWrap {
+.profileMedia {
   position: relative;
   flex-shrink: 0;
 }
 
-.avatar {
+.profileImage {
   display: block;
   width: 72px;
   height: 72px;

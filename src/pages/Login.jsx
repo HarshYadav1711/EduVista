@@ -2,8 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import { FloatingLabelField } from '../components/FloatingLabelField'
 import styles from './Login.module.css'
 
-const LOREM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
-
 export default function Login() {
   const navigate = useNavigate()
 
@@ -16,7 +14,9 @@ export default function Login() {
     <main className={styles.screen}>
       <header className={styles.intro}>
         <h1 className={styles.title}>Signin to your PopX account</h1>
-        <p className={styles.body}>{LOREM}</p>
+        <p className={styles.body}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </p>
       </header>
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>

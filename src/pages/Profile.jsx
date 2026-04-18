@@ -1,9 +1,6 @@
 import styles from './Profile.module.css'
 
-const AVATAR_SRC = '/avatar.jpg'
-
-const BIO =
-  'Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam'
+const PROFILE_IMAGE = '/profile.jpg'
 
 export default function Profile() {
   return (
@@ -16,11 +13,11 @@ export default function Profile() {
         className={styles.identity}
         aria-labelledby="profile-name"
       >
-        <div className={styles.avatarWrap}>
+        <div className={styles.profileMedia}>
           <img
-            className={styles.avatar}
-            src={AVATAR_SRC}
-            alt="Marry Doe"
+            className={styles.profileImage}
+            src={PROFILE_IMAGE}
+            alt=""
             width={72}
             height={72}
           />
@@ -44,7 +41,10 @@ export default function Profile() {
         </div>
       </section>
 
-      <p className={styles.bio}>{BIO}</p>
+      <p className={styles.bio}>
+        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy
+        Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
+      </p>
 
       <div className={styles.rule} aria-hidden="true" />
     </main>

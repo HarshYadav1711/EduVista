@@ -1,5 +1,3 @@
-/** Field list for signup — copy and defaults match the XD artboard. */
-
 export const signupFields = [
   {
     id: 'fullName',

@@ -2,7 +2,6 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { MobileFrame } from './MobileFrame'
 import styles from './AppShell.module.css'
 
-/** Login artboard uses a cool grey fill; all other screens use white. */
 function surfaceForPath(pathname) {
   if (pathname === '/login') return 'login'
   return 'white'

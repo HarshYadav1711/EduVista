@@ -1,8 +1,8 @@
 {
-  "name": "eduvista",
-  "description": "PopX mobile UI — internship assessment (XD-driven)",
+  "name": "eduvista-assessment",
+  "description": "Educase India internship: React UI from the provided Adobe XD file.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

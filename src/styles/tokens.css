@@ -1,4 +1,4 @@
-/* PopX — values aligned to Adobe XD prototype (375×812) */
+/* Design tokens — Adobe XD artboard 375×812 */
 
 :root {
   --color-canvas: #e8e8e8;
@@ -22,7 +22,7 @@
   --color-required: #e53935;
   --color-step-badge: #f7b500;
   --color-radio-off: #cbcbcb;
-  --color-placeholder: #9ca3af;
+  --color-input-placeholder: #9ca3af;
 
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
