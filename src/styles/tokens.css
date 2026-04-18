@@ -1,0 +1,18 @@
+/* Design tokens — Adobe XD PopX artboard (375 × 812 logical) */
+
+:root {
+  --color-canvas: #e8e8e8;
+  --color-frame: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6d6d6d;
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* XD mobile frame */
+  --frame-width: 375px;
+  --frame-min-height: 812px;
+  --frame-radius: 0;
+  --frame-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+
+  --shell-padding: 24px;
+}

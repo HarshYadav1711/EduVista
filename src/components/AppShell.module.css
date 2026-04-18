@@ -1,0 +1,13 @@
+.canvas {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--shell-padding);
+  padding-bottom: max(var(--shell-padding), env(safe-area-inset-bottom));
+  background: var(--color-canvas);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
