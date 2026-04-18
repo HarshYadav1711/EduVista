@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { FloatingLabelField } from '../components/FloatingLabelField'
+import { LOREM_SUBTITLE } from '../content/xdCopy'
 import { ROUTES } from '../routes/paths'
 import styles from './Login.module.css'
 
@@ -15,15 +16,13 @@ export default function Login() {
     <main className={styles.screen}>
       <header className={styles.intro}>
         <h1 className={styles.title}>Signin to your PopX account</h1>
-        <p className={styles.body}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        </p>
+        <p className={styles.body}>{LOREM_SUBTITLE}</p>
       </header>
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
         <FloatingLabelField
           id="email"
-          label="Email Address"
+          label="Email address"
           type="email"
           placeholder="Enter email address"
           autoComplete="email"

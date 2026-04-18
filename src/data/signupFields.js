@@ -1,3 +1,5 @@
+import { SAMPLE_EMAIL } from '../content/xdCopy'
+
 export const signupFields = [
   {
     id: 'fullName',
@@ -12,8 +14,8 @@ export const signupFields = [
     id: 'phone',
     label: 'Phone number',
     type: 'tel',
-    placeholder: 'Marry Doe',
-    defaultValue: 'Marry Doe',
+    placeholder: '9876543210',
+    defaultValue: '9876543210',
     required: true,
     autoComplete: 'tel',
   },
@@ -21,8 +23,8 @@ export const signupFields = [
     id: 'email',
     label: 'Email address',
     type: 'email',
-    placeholder: 'Marry Doe',
-    defaultValue: 'Marry Doe',
+    placeholder: SAMPLE_EMAIL,
+    defaultValue: SAMPLE_EMAIL,
     required: true,
     autoComplete: 'email',
   },
@@ -30,8 +32,7 @@ export const signupFields = [
     id: 'password',
     label: 'Password',
     type: 'password',
-    placeholder: 'Marry Doe',
-    defaultValue: 'Marry Doe',
+    placeholder: 'Enter password',
     required: true,
     autoComplete: 'new-password',
   },
@@ -39,8 +40,7 @@ export const signupFields = [
     id: 'company',
     label: 'Company name',
     type: 'text',
-    placeholder: 'Marry Doe',
-    defaultValue: 'Marry Doe',
+    placeholder: 'Company Pvt. Ltd.',
     required: false,
     autoComplete: 'organization',
   },

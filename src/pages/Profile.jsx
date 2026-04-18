@@ -1,10 +1,8 @@
 import { CameraIcon } from '../components/CameraIcon'
+import { PROFILE_BIO, SAMPLE_EMAIL } from '../content/xdCopy'
 import styles from './Profile.module.css'
 
 const PROFILE_IMAGE_SRC = '/profile.jpg'
-
-const BIO_TEXT =
-  'Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam'
 
 export default function Profile() {
   return (
@@ -30,11 +28,11 @@ export default function Profile() {
           <p id="profile-name" className={styles.name}>
             Marry Doe
           </p>
-          <p className={styles.email}>Marry@Gmail.Com</p>
+          <p className={styles.email}>{SAMPLE_EMAIL}</p>
         </div>
       </section>
 
-      <p className={styles.bio}>{BIO_TEXT}</p>
+      <p className={styles.bio}>{PROFILE_BIO}</p>
 
       <div className={styles.rule} aria-hidden="true" />
     </main>
