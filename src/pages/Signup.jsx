@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FloatingLabelField } from '../components/FloatingLabelField'
 import { signupFields } from '../data/signupFields'
+import { ROUTES } from '../routes/paths'
 import styles from './Signup.module.css'
 
 export default function Signup() {
@@ -10,7 +11,7 @@ export default function Signup() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    navigate('/profile')
+    navigate(ROUTES.profile)
   }
 
   return (

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { FloatingLabelField } from '../components/FloatingLabelField'
+import { ROUTES } from '../routes/paths'
 import styles from './Login.module.css'
 
 export default function Login() {
@@ -7,7 +8,7 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    navigate('/profile')
+    navigate(ROUTES.profile)
   }
 
   return (
