@@ -2,19 +2,19 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 36px var(--page-gutter) 40px;
+  padding: var(--space-10) var(--page-gutter) var(--space-11);
 }
 
 .pageHeader {
-  margin-bottom: 28px;
+  margin-bottom: var(--space-8);
 }
 
 .title {
   margin: 0;
   font-size: var(--font-title-signup);
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  line-height: var(--lh-title-signup);
+  letter-spacing: var(--letter-spacing-default);
   color: var(--color-text);
 }
 
@@ -23,14 +23,15 @@
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  width: 28px;
-  height: 28px;
-  margin: 0 2px;
+  width: var(--space-8);
+  height: var(--space-8);
+  margin: 0 var(--space-1);
   border-radius: 50%;
-  font-size: 14px;
+  font-size: var(--font-step-badge);
   font-weight: 700;
   line-height: 1;
-  color: #ffffff;
+  letter-spacing: var(--letter-spacing-default);
+  color: var(--color-white);
   background: var(--color-step-badge);
 }
 
@@ -44,18 +45,20 @@
 .fields {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--space-6);
 }
 
 .agency {
-  margin-top: 8px;
+  margin-top: var(--space-2);
 }
 
 .agencyLegend {
   font-size: var(--font-body);
   font-weight: 600;
+  line-height: var(--lh-body);
+  letter-spacing: var(--letter-spacing-default);
   color: var(--color-text);
-  margin-bottom: 12px;
+  margin-bottom: var(--space-4);
   padding: 0;
 }
 
@@ -67,15 +70,17 @@
 .radioRow {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: var(--space-8);
 }
 
 .radioLabel {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-2);
   font-size: var(--font-body);
   font-weight: 500;
+  line-height: var(--lh-body);
+  letter-spacing: var(--letter-spacing-default);
   color: var(--color-text);
   cursor: pointer;
 }
@@ -93,8 +98,8 @@
 }
 
 .radioUi {
-  width: 20px;
-  height: 20px;
+  width: var(--space-6);
+  height: var(--space-6);
   border-radius: 50%;
   border: 2px solid var(--color-radio-off);
   flex-shrink: 0;
@@ -112,11 +117,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8px;
-  height: 8px;
+  width: var(--size-radio-dot);
+  height: var(--size-radio-dot);
   margin: -4px 0 0 -4px;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--color-white);
 }
 
 .radioInput:focus-visible + .radioUi {
@@ -126,13 +131,17 @@
 
 .submit {
   width: 100%;
-  height: 48px;
-  margin-top: 12px;
+  height: var(--space-12);
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+  padding: 0;
   border: none;
   border-radius: var(--radius-control);
   font-size: var(--font-button);
   font-weight: 600;
-  color: #ffffff;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-default);
+  color: var(--color-white);
   background: var(--color-accent);
 }
 

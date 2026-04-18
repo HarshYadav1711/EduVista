@@ -15,8 +15,9 @@
   padding: 0 6px;
   font-size: var(--font-label);
   font-weight: 500;
-  color: var(--color-label);
   line-height: 1;
+  letter-spacing: var(--letter-spacing-default);
+  color: var(--color-label);
   z-index: 1;
 }
 
@@ -34,10 +35,16 @@
 }
 
 .input {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
-  height: 48px;
+  height: var(--space-12);
+  margin: 0;
   padding: 0 14px;
   font-size: var(--font-button);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-default);
   color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-control);
@@ -54,6 +61,7 @@
 
 .input::placeholder {
   color: var(--color-input-placeholder);
+  opacity: 1;
 }
 
 .input:focus {
