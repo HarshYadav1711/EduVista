@@ -1,5 +1,15 @@
 import styles from './FloatingLabelField.module.css'
 
+function labelClassFor(surface) {
+  if (surface === 'login') return `${styles.label} ${styles.labelLogin}`
+  return `${styles.label} ${styles.labelWhite}`
+}
+
+function inputClassFor(surface) {
+  if (surface === 'login') return `${styles.input} ${styles.inputLogin}`
+  return `${styles.input} ${styles.inputWhite}`
+}
+
 export function FloatingLabelField({
   id,
   label,
@@ -8,22 +18,12 @@ export function FloatingLabelField({
   required,
   defaultValue,
   autoComplete,
-  surface,
+  surface = 'white',
 }) {
-  const labelClass =
-    surface === 'white'
-      ? `${styles.label} ${styles.labelWhite}`
-      : styles.label
-
-  const inputClass =
-    surface === 'white'
-      ? `${styles.input} ${styles.inputWhite}`
-      : styles.input
-
   return (
     <div className={styles.root}>
       <div className={styles.field}>
-        <label className={labelClass} htmlFor={id}>
+        <label className={labelClassFor(surface)} htmlFor={id}>
           {label}
           {required ? (
             <span className={styles.asterisk} aria-hidden="true">
@@ -34,7 +34,7 @@ export function FloatingLabelField({
         <input
           id={id}
           name={id}
-          className={inputClass}
+          className={inputClassFor(surface)}
           type={type}
           placeholder={placeholder}
           defaultValue={defaultValue}

@@ -1,4 +1,4 @@
-/* Profile — header, identity row, bio, dashed rule */
+/* Profile — header rule, avatar row, bio, dashed rule (XD) */
 
 .screen {
   flex: 1;
@@ -16,7 +16,7 @@
   padding: 20px var(--page-gutter) 16px;
   font-size: var(--font-title-profile);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: var(--lh-tight);
   color: var(--color-text);
 }
 
@@ -77,7 +77,7 @@
 
 .name {
   margin: 0 0 4px;
-  font-size: 17px;
+  font-size: var(--font-name);
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-text);

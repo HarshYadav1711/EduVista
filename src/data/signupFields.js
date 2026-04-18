@@ -1,3 +1,5 @@
+/** Field list for signup — copy and defaults match the XD artboard. */
+
 export const signupFields = [
   {
     id: 'fullName',
@@ -12,8 +14,8 @@ export const signupFields = [
     id: 'phone',
     label: 'Phone number',
     type: 'tel',
-    placeholder: '9876543210',
-    defaultValue: '9876543210',
+    placeholder: 'Marry Doe',
+    defaultValue: 'Marry Doe',
     required: true,
     autoComplete: 'tel',
   },
@@ -21,8 +23,8 @@ export const signupFields = [
     id: 'email',
     label: 'Email address',
     type: 'email',
-    placeholder: 'Marry@Gmail.Com',
-    defaultValue: 'Marry@Gmail.Com',
+    placeholder: 'Marry Doe',
+    defaultValue: 'Marry Doe',
     required: true,
     autoComplete: 'email',
   },
@@ -30,7 +32,8 @@ export const signupFields = [
     id: 'password',
     label: 'Password',
     type: 'password',
-    placeholder: 'Enter password',
+    placeholder: 'Marry Doe',
+    defaultValue: 'Marry Doe',
     required: true,
     autoComplete: 'new-password',
   },
@@ -38,7 +41,8 @@ export const signupFields = [
     id: 'company',
     label: 'Company name',
     type: 'text',
-    placeholder: 'Agency Name',
+    placeholder: 'Marry Doe',
+    defaultValue: 'Marry Doe',
     required: false,
     autoComplete: 'organization',
   },

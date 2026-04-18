@@ -1,4 +1,4 @@
-/* Signup — header, fields, agency radios, CTA */
+/* Signup — title + inline step badge, white field stack, radios, CTA */
 
 .screen {
   flex: 1;
@@ -8,17 +8,12 @@
 }
 
 .pageHeader {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
   margin-bottom: 28px;
 }
 
 .title {
   margin: 0;
-  max-width: 248px;
-  font-size: 22px;
+  font-size: var(--font-title-signup);
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -26,13 +21,14 @@
 }
 
 .stepBadge {
-  flex-shrink: 0;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin: 0 2px;
+  border-radius: 50%;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -50,7 +46,7 @@
 .fields {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .agency {
@@ -105,18 +101,25 @@
   border: 2px solid var(--color-radio-off);
   flex-shrink: 0;
   position: relative;
+  box-sizing: border-box;
 }
 
+/* Selected: filled accent with white center (XD) */
 .radioUiOn {
-  border-color: var(--color-label);
+  border-color: var(--color-accent);
+  background: var(--color-accent);
 }
 
 .radioUiOn::after {
   content: '';
   position: absolute;
-  inset: 4px;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
   border-radius: 50%;
-  background: var(--color-label);
+  background: #ffffff;
 }
 
 .radioInput:focus-visible + .radioUi {

@@ -4,22 +4,19 @@
   min-height: var(--frame-min-height);
   flex-shrink: 0;
   border-radius: var(--frame-radius);
+  border: var(--frame-border);
   box-shadow: var(--frame-shadow);
   display: flex;
   flex-direction: column;
   overflow-x: clip;
 }
 
-.surfaceLanding {
-  background: var(--color-screen-landing);
+.surfaceLogin {
+  background: var(--color-screen-login);
 }
 
 .surfaceWhite {
   background: var(--color-screen-white);
-}
-
-.surfaceForm {
-  background: var(--color-screen-form);
 }
 
 .inner {

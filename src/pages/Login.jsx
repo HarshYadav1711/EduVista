@@ -26,7 +26,7 @@ export default function Login() {
           type="email"
           placeholder="Enter email address"
           autoComplete="email"
-          surface="white"
+          surface="login"
         />
         <FloatingLabelField
           id="password"
@@ -34,7 +34,7 @@ export default function Login() {
           type="password"
           placeholder="Enter password"
           autoComplete="current-password"
-          surface="white"
+          surface="login"
         />
         <button type="submit" className={styles.submit}>
           Login

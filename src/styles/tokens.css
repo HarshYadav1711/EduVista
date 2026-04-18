@@ -1,50 +1,54 @@
-/* Adobe XD — PopX (375×812 artboard); tokens are the single source for spacing and color */
+/* PopX — values aligned to Adobe XD prototype (375×812) */
 
 :root {
   --color-canvas: #e8e8e8;
 
   --color-screen-white: #ffffff;
-  --color-screen-landing: #ffffff;
-  --color-screen-form: #f5f5f5;
+  --color-screen-login: #f7f8f9;
 
   --color-text: #1d2226;
-  --color-text-body: #666666;
+  --color-text-landing-body: #6c757d;
+  --color-text-muted: #626262;
   --color-text-secondary: #6d6d6d;
 
   --color-accent: #6c25ff;
   --color-accent-hover: #5a1fe0;
-  --color-accent-soft: #cbc9ff;
-  --color-label: #6c4cff;
-  --color-border: #d0d0d0;
+  --color-accent-soft: #cebafb;
+  --color-label: #6c25ff;
+  --color-border: #cbcbcb;
   --color-border-header: #e8e8e8;
-  --color-button-muted: #c4c4c4;
-  --color-required: #e85d04;
-  --color-step-badge: #f4c430;
-  --color-radio-off: #bdbdbd;
-  --color-placeholder: #757575;
+  --color-frame-border: #e8e8e8;
+  --color-button-muted: #cbcbcb;
+  --color-required: #e53935;
+  --color-step-badge: #f7b500;
+  --color-radio-off: #cbcbcb;
+  --color-placeholder: #9ca3af;
 
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   --frame-width: 375px;
   --frame-min-height: 812px;
   --frame-radius: 0;
-  --frame-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --frame-border: 1px solid var(--color-frame-border);
+  --frame-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 
-  /* Outer canvas padding: stable on large screens, tighter on narrow viewports */
   --shell-padding: clamp(16px, 3vmin, 24px);
   --page-gutter: 24px;
 
   --radius-control: 6px;
 
   --font-title-landing: 28px;
-  --font-title-screen: 24px;
+  --font-title-login: 24px;
+  --font-title-signup: 22px;
   --font-title-profile: 20px;
   --font-body: 16px;
   --font-label: 13px;
   --font-button: 15px;
+  --font-name: 17px;
   --font-caption: 14px;
 
   --lh-tight: 1.2;
+  --lh-title-login: 1.28;
   --lh-body: 1.5;
   --lh-bio: 1.55;
 }

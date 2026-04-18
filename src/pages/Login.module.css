@@ -1,4 +1,4 @@
-/* Login — intro block, then form */
+/* Login — intro, two outlined fields, neutral Login CTA */
 
 .screen {
   flex: 1;
@@ -8,14 +8,15 @@
 }
 
 .intro {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .title {
   margin: 0 0 10px;
-  font-size: var(--font-title-screen);
+  max-width: 100%;
+  font-size: var(--font-title-login);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: var(--lh-title-login);
   letter-spacing: -0.02em;
   color: var(--color-text);
 }
@@ -25,19 +26,19 @@
   font-size: var(--font-body);
   font-weight: 400;
   line-height: var(--lh-body);
-  color: var(--color-text-body);
+  color: var(--color-text-muted);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
 }
 
 .submit {
   width: 100%;
   height: 48px;
-  margin-top: 4px;
+  margin-top: 0;
   border: none;
   border-radius: var(--radius-control);
   font-size: var(--font-button);

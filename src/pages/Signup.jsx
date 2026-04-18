@@ -16,10 +16,13 @@ export default function Signup() {
   return (
     <main className={styles.screen}>
       <header className={styles.pageHeader}>
-        <h1 className={styles.title}>Create your PopX account</h1>
-        <div className={styles.stepBadge} aria-label="Step 1">
-          <span aria-hidden="true">1</span>
-        </div>
+        <h1 className={styles.title}>
+          Create your{' '}
+          <span className={styles.stepBadge} aria-label="Step 1">
+            <span aria-hidden="true">1</span>
+          </span>{' '}
+          PopX account
+        </h1>
       </header>
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
@@ -34,7 +37,7 @@ export default function Signup() {
               defaultValue={field.defaultValue}
               required={field.required}
               autoComplete={field.autoComplete}
-              surface="form"
+              surface="white"
             />
           ))}
         </div>
