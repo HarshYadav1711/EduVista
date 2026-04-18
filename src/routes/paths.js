@@ -1,4 +1,4 @@
-/** Application paths — use with `<Link>` and `navigate()` for client-side navigation only. */
+/** Client-side route paths (use with `Link` / `navigate`). */
 export const ROUTES = Object.freeze({
   home: '/',
   login: '/login',

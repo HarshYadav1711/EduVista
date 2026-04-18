@@ -5,6 +5,11 @@ import { signupFields } from '../data/signupFields'
 import { ROUTES } from '../routes/paths'
 import styles from './Signup.module.css'
 
+const AGENCY_OPTIONS = [
+  { value: 'yes', label: 'Yes' },
+  { value: 'no', label: 'No' },
+]
+
 export default function Signup() {
   const navigate = useNavigate()
   const [agency, setAgency] = useState('yes')
@@ -51,44 +56,27 @@ export default function Signup() {
             </span>
           </legend>
           <div className={styles.radioRow}>
-            <label className={styles.radioLabel}>
-              <input
-                className={styles.radioInput}
-                type="radio"
-                name="agency"
-                value="yes"
-                checked={agency === 'yes'}
-                onChange={() => setAgency('yes')}
-              />
-              <span
-                className={
-                  agency === 'yes'
-                    ? `${styles.radioUi} ${styles.radioUiOn}`
-                    : styles.radioUi
-                }
-                aria-hidden="true"
-              />
-              Yes
-            </label>
-            <label className={styles.radioLabel}>
-              <input
-                className={styles.radioInput}
-                type="radio"
-                name="agency"
-                value="no"
-                checked={agency === 'no'}
-                onChange={() => setAgency('no')}
-              />
-              <span
-                className={
-                  agency === 'no'
-                    ? `${styles.radioUi} ${styles.radioUiOn}`
-                    : styles.radioUi
-                }
-                aria-hidden="true"
-              />
-              No
-            </label>
+            {AGENCY_OPTIONS.map(({ value, label }) => (
+              <label key={value} className={styles.radioLabel}>
+                <input
+                  className={styles.radioInput}
+                  type="radio"
+                  name="agency"
+                  value={value}
+                  checked={agency === value}
+                  onChange={() => setAgency(value)}
+                />
+                <span
+                  className={
+                    agency === value
+                      ? `${styles.radioUi} ${styles.radioUiOn}`
+                      : styles.radioUi
+                  }
+                  aria-hidden="true"
+                />
+                {label}
+              </label>
+            ))}
           </div>
         </fieldset>
 

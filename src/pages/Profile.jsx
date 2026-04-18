@@ -1,6 +1,10 @@
+import { CameraIcon } from '../components/CameraIcon'
 import styles from './Profile.module.css'
 
-const PROFILE_IMAGE = '/profile.jpg'
+const PROFILE_IMAGE_SRC = '/profile.jpg'
+
+const BIO_TEXT =
+  'Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam'
 
 export default function Profile() {
   return (
@@ -9,28 +13,17 @@ export default function Profile() {
         <h1 className={styles.screenTitle}>Account Settings</h1>
       </header>
 
-      <section
-        className={styles.identity}
-        aria-labelledby="profile-name"
-      >
+      <section className={styles.identity} aria-labelledby="profile-name">
         <div className={styles.profileMedia}>
           <img
             className={styles.profileImage}
-            src={PROFILE_IMAGE}
+            src={PROFILE_IMAGE_SRC}
             alt=""
             width={72}
             height={72}
           />
           <button type="button" className={styles.camera} aria-label="Change profile photo">
-            <svg
-              className={styles.cameraIcon}
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path d="M9 4L7.17 6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-3.17L15 4H9zm3 13a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </svg>
+            <CameraIcon className={styles.cameraIcon} />
           </button>
         </div>
         <div className={styles.meta}>
@@ -41,10 +34,7 @@ export default function Profile() {
         </div>
       </section>
 
-      <p className={styles.bio}>
-        Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy
-        Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
-      </p>
+      <p className={styles.bio}>{BIO_TEXT}</p>
 
       <div className={styles.rule} aria-hidden="true" />
     </main>

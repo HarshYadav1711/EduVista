@@ -2,14 +2,13 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { MobileFrame } from './MobileFrame'
 import styles from './AppShell.module.css'
 
-function surfaceForPath(pathname) {
-  if (pathname === '/login') return 'login'
-  return 'white'
+const FRAME_SURFACE = {
+  '/login': 'login',
 }
 
 export function AppShell() {
   const { pathname } = useLocation()
-  const surface = surfaceForPath(pathname)
+  const surface = FRAME_SURFACE[pathname] ?? 'white'
 
   return (
     <div className={styles.canvas}>

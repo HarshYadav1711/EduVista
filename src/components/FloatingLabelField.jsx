@@ -1,13 +1,13 @@
 import styles from './FloatingLabelField.module.css'
 
-function labelClassFor(surface) {
-  if (surface === 'login') return `${styles.label} ${styles.labelLogin}`
-  return `${styles.label} ${styles.labelWhite}`
+const LABEL_MODIFIER = {
+  login: styles.labelLogin,
+  white: styles.labelWhite,
 }
 
-function inputClassFor(surface) {
-  if (surface === 'login') return `${styles.input} ${styles.inputLogin}`
-  return `${styles.input} ${styles.inputWhite}`
+const INPUT_MODIFIER = {
+  login: styles.inputLogin,
+  white: styles.inputWhite,
 }
 
 export function FloatingLabelField({
@@ -20,10 +20,13 @@ export function FloatingLabelField({
   autoComplete,
   surface = 'white',
 }) {
+  const labelExtra = LABEL_MODIFIER[surface] ?? styles.labelWhite
+  const inputExtra = INPUT_MODIFIER[surface] ?? styles.inputWhite
+
   return (
     <div className={styles.root}>
       <div className={styles.field}>
-        <label className={labelClassFor(surface)} htmlFor={id}>
+        <label className={`${styles.label} ${labelExtra}`} htmlFor={id}>
           {label}
           {required ? (
             <span className={styles.asterisk} aria-hidden="true">
@@ -34,7 +37,7 @@ export function FloatingLabelField({
         <input
           id={id}
           name={id}
-          className={inputClassFor(surface)}
+          className={`${styles.input} ${inputExtra}`}
           type={type}
           placeholder={placeholder}
           defaultValue={defaultValue}
