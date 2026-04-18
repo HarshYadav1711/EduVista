@@ -15,15 +15,13 @@ export default function Signup() {
 
   return (
     <main className={styles.screen}>
-      {/* Section 1: title row + step indicator */}
       <header className={styles.pageHeader}>
         <h1 className={styles.title}>Create your PopX account</h1>
         <div className={styles.stepBadge} aria-label="Step 1">
-          1
+          <span aria-hidden="true">1</span>
         </div>
       </header>
 
-      {/* Section 2: account fields */}
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
         <div className={styles.fields}>
           {signupFields.map((field) => (
@@ -41,7 +39,6 @@ export default function Signup() {
           ))}
         </div>
 
-        {/* Section 3: agency choice */}
         <fieldset className={styles.agency}>
           <legend className={styles.agencyLegend}>
             Are you an Agency?
@@ -65,6 +62,7 @@ export default function Signup() {
                     ? `${styles.radioUi} ${styles.radioUiOn}`
                     : styles.radioUi
                 }
+                aria-hidden="true"
               />
               Yes
             </label>
@@ -83,13 +81,13 @@ export default function Signup() {
                     ? `${styles.radioUi} ${styles.radioUiOn}`
                     : styles.radioUi
                 }
+                aria-hidden="true"
               />
               No
             </label>
           </div>
         </fieldset>
 
-        {/* Section 4: submit */}
         <button type="submit" className={styles.submit}>
           Create Account
         </button>

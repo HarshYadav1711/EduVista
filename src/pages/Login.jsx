@@ -14,13 +14,11 @@ export default function Login() {
 
   return (
     <main className={styles.screen}>
-      {/* Section 1: intro copy */}
       <header className={styles.intro}>
         <h1 className={styles.title}>Signin to your PopX account</h1>
         <p className={styles.body}>{LOREM}</p>
       </header>
 
-      {/* Section 2: form + primary action */}
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
         <FloatingLabelField
           id="email"

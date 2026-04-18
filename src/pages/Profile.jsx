@@ -8,18 +8,19 @@ const BIO =
 export default function Profile() {
   return (
     <main className={styles.screen}>
-      {/* Section 1: screen title */}
       <header className={styles.screenHeader}>
         <h1 className={styles.screenTitle}>Account Settings</h1>
       </header>
 
-      {/* Section 2: avatar + identity */}
-      <div className={styles.identity}>
+      <section
+        className={styles.identity}
+        aria-labelledby="profile-name"
+      >
         <div className={styles.avatarWrap}>
           <img
             className={styles.avatar}
             src={AVATAR_SRC}
-            alt=""
+            alt="Marry Doe"
             width={72}
             height={72}
           />
@@ -36,15 +37,15 @@ export default function Profile() {
           </button>
         </div>
         <div className={styles.meta}>
-          <p className={styles.name}>Marry Doe</p>
+          <p id="profile-name" className={styles.name}>
+            Marry Doe
+          </p>
           <p className={styles.email}>Marry@Gmail.Com</p>
         </div>
-      </div>
+      </section>
 
-      {/* Section 3: bio */}
       <p className={styles.bio}>{BIO}</p>
 
-      {/* Section 4: trailing rule */}
       <div className={styles.rule} aria-hidden="true" />
     </main>
   )

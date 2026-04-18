@@ -40,6 +40,7 @@ export function FloatingLabelField({
           defaultValue={defaultValue}
           autoComplete={autoComplete}
           required={required}
+          aria-required={required ? true : undefined}
         />
       </div>
     </div>

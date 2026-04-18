@@ -43,7 +43,7 @@
 }
 
 .input::placeholder {
-  color: #9a9a9a;
+  color: var(--color-placeholder);
 }
 
 .input:focus {
