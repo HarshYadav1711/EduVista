@@ -14,8 +14,8 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: var(--font-body);
+  line-height: var(--lh-body);
   color: var(--color-text);
   background: var(--color-canvas);
   -webkit-font-smoothing: antialiased;
@@ -26,6 +26,17 @@ body {
   min-height: 100dvh;
 }
 
-a {
-  color: inherit;
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }

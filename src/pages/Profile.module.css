@@ -1,0 +1,107 @@
+/* Profile — header, identity row, bio, dashed rule */
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+}
+
+.screenHeader {
+  border-bottom: 1px solid var(--color-border-header);
+}
+
+.screenTitle {
+  margin: 0;
+  padding: 20px var(--page-gutter) 16px;
+  font-size: var(--font-title-profile);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px var(--page-gutter) 0;
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera {
+  position: absolute;
+  right: -4px;
+  bottom: -2px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.camera:hover {
+  background: var(--color-accent-hover);
+}
+
+.camera:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.cameraIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.meta {
+  padding-top: 4px;
+  min-width: 0;
+}
+
+.name {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.email {
+  margin: 0;
+  font-size: var(--font-caption);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--color-text-secondary);
+}
+
+.bio {
+  margin: 20px var(--page-gutter) 0;
+  font-size: var(--font-caption);
+  font-weight: 400;
+  line-height: var(--lh-bio);
+  color: var(--color-text-secondary);
+}
+
+.rule {
+  margin: 28px var(--page-gutter) 0;
+  height: 0;
+  border: none;
+  border-top: 1px dashed var(--color-border-header);
+}

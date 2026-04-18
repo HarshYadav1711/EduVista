@@ -1,11 +1,14 @@
 import styles from './MobileFrame.module.css'
 
-/**
- * Fixed XD proportions (375×812 min). Not a fluid website layout.
- */
-export function MobileFrame({ children }) {
+const surfaceClass = {
+  landing: styles.surfaceLanding,
+  white: styles.surfaceWhite,
+  form: styles.surfaceForm,
+}
+
+export function MobileFrame({ surface = 'white', children }) {
   return (
-    <div className={styles.frame}>
+    <div className={`${styles.frame} ${surfaceClass[surface]}`}>
       <div className={styles.inner}>{children}</div>
     </div>
   )

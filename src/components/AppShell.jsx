@@ -1,14 +1,20 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import { MobileFrame } from './MobileFrame'
 import styles from './AppShell.module.css'
 
-/**
- * Desktop “canvas”: neutral full-viewport background with the phone preview centered.
- */
+function surfaceForPath(pathname) {
+  if (pathname === '/') return 'landing'
+  if (pathname === '/signup') return 'form'
+  return 'white'
+}
+
 export function AppShell() {
+  const { pathname } = useLocation()
+  const surface = surfaceForPath(pathname)
+
   return (
     <div className={styles.canvas}>
-      <MobileFrame>
+      <MobileFrame surface={surface}>
         <Outlet />
       </MobileFrame>
     </div>

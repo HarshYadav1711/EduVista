@@ -1,0 +1,146 @@
+/* Signup — header, fields, agency radios, CTA */
+
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 36px var(--page-gutter) 40px;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.title {
+  margin: 0;
+  max-width: 248px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.stepBadge {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  background: var(--color-step-badge);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.agency {
+  margin-top: 8px;
+}
+
+.agencyLegend {
+  font-size: var(--font-body);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.asterisk {
+  color: var(--color-required);
+  font-weight: 600;
+}
+
+.radioRow {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.radioLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-body);
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.radioInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.radioUi {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--color-radio-off);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.radioUiOn {
+  border-color: var(--color-label);
+}
+
+.radioUiOn::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--color-label);
+}
+
+.radioInput:focus-visible + .radioUi {
+  outline: 2px solid var(--color-label);
+  outline-offset: 2px;
+}
+
+.submit {
+  width: 100%;
+  height: 48px;
+  margin-top: 12px;
+  border: none;
+  border-radius: var(--radius-control);
+  font-size: var(--font-button);
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--color-accent);
+}
+
+.submit:hover {
+  background: var(--color-accent-hover);
+}
+
+.submit:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}

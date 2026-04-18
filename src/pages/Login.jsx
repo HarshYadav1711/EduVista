@@ -1,17 +1,47 @@
-import { Link } from 'react-router-dom'
-import styles from '../styles/page.module.css'
+import { useNavigate } from 'react-router-dom'
+import { FloatingLabelField } from '../components/FloatingLabelField'
+import styles from './Login.module.css'
+
+const LOREM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
 
 export default function Login() {
+  const navigate = useNavigate()
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    navigate('/profile')
+  }
+
   return (
-    <main className={styles.root}>
-      <h1 className={styles.title}>Login</h1>
-      <p className={styles.lede}>
-        Placeholder for the sign-in screen from the XD prototype.
-      </p>
-      <nav className={styles.nav} aria-label="Screen">
-        <Link to="/profile">Continue to profile</Link>
-        <Link to="/">Back to landing</Link>
-      </nav>
+    <main className={styles.screen}>
+      {/* Section 1: intro copy */}
+      <header className={styles.intro}>
+        <h1 className={styles.title}>Signin to your PopX account</h1>
+        <p className={styles.body}>{LOREM}</p>
+      </header>
+
+      {/* Section 2: form + primary action */}
+      <form className={styles.form} onSubmit={handleSubmit} noValidate>
+        <FloatingLabelField
+          id="email"
+          label="Email Address"
+          type="email"
+          placeholder="Enter email address"
+          autoComplete="email"
+          surface="white"
+        />
+        <FloatingLabelField
+          id="password"
+          label="Password"
+          type="password"
+          placeholder="Enter password"
+          autoComplete="current-password"
+          surface="white"
+        />
+        <button type="submit" className={styles.submit}>
+          Login
+        </button>
+      </form>
     </main>
   )
 }

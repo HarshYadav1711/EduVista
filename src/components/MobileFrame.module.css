@@ -3,11 +3,22 @@
   max-width: min(var(--frame-width), 100%);
   min-height: var(--frame-min-height);
   flex-shrink: 0;
-  background: var(--color-frame);
   border-radius: var(--frame-radius);
   box-shadow: var(--frame-shadow);
   display: flex;
   flex-direction: column;
+}
+
+.surfaceLanding {
+  background: var(--color-screen-landing);
+}
+
+.surfaceWhite {
+  background: var(--color-screen-white);
+}
+
+.surfaceForm {
+  background: var(--color-screen-form);
 }
 
 .inner {
