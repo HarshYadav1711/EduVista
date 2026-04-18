@@ -1,5 +1,8 @@
 .screen {
-  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 0 0 auto;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   padding: var(--space-12) var(--page-gutter) var(--space-11);

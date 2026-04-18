@@ -1,14 +1,20 @@
+/*
+ * Fixed-size preview: same dimensions on every route.
+ * Scroll only inside .inner — document never scrolls.
+ */
 .frame {
+  box-sizing: border-box;
   width: var(--frame-width);
-  max-width: min(var(--frame-width), 100%);
-  min-height: var(--frame-min-height);
-  flex-shrink: 0;
+  max-width: min(var(--frame-width), calc(100vw - 32px));
+  flex: 0 0 auto;
+  height: min(var(--frame-min-height), 100%);
+  max-height: 100%;
   border-radius: var(--frame-radius);
   border: var(--frame-border);
   box-shadow: var(--shadow-frame);
   display: flex;
   flex-direction: column;
-  overflow-x: clip;
+  overflow: hidden;
 }
 
 .surfaceLogin {
@@ -20,8 +26,13 @@
 }
 
 .inner {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-direction: column;
-  min-height: 0;
 }

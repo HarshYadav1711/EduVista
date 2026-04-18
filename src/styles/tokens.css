@@ -35,9 +35,9 @@
 
   --frame-width: 375px;
   --frame-min-height: 812px;
-  --frame-radius: 0;
+  --frame-radius: 12px;
   --frame-border: 1px solid var(--color-frame-border);
-  --shadow-frame: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --shadow-frame: 0 12px 40px rgba(0, 0, 0, 0.1);
 
   /* —— Spacing rhythm (8px base; XD gutters 24px) —— */
   --space-0: 0;
