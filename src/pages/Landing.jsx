@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { LOREM_SUBTITLE } from '../content/xdCopy'
+import { LANDING_BODY } from '../content/appCopy'
 import { ROUTES } from '../routes/paths'
 import styles from './Landing.module.css'
 
@@ -9,8 +9,8 @@ export default function Landing() {
       <div className={styles.topSpace} aria-hidden="true" />
 
       <div className={styles.block}>
-        <h1 className={styles.title}>Welcome to PopX</h1>
-        <p className={styles.body}>{LOREM_SUBTITLE}</p>
+        <h1 className={styles.title}>Welcome</h1>
+        <p className={styles.body}>{LANDING_BODY}</p>
 
         <nav className={styles.actions} aria-label="Sign up or sign in">
           <Link className={styles.btnPrimary} to={ROUTES.signup}>

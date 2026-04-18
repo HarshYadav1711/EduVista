@@ -1,6 +1,6 @@
-# Educase India — React internship assessment
+# Account UI (React)
 
-Single-page React app implementing the mobile screens from the supplied **Adobe XD** document. The XD file is the only source for on-screen copy, layout, and visual treatment.
+Single-page React app implementing the mobile screens from the supplied **Adobe XD** specification. On-screen layout and visual treatment follow that document.
 
 **Design file:** [Adobe XD prototype](https://xd.adobe.com/view/b68eea25-003d-4a5d-8fdd-d463eeb20b32-e3dd/)
 

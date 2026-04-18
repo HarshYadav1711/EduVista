@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { FloatingLabelField } from '../components/FloatingLabelField'
-import { LOREM_SUBTITLE } from '../content/xdCopy'
+import { LOGIN_BODY } from '../content/appCopy'
 import { ROUTES } from '../routes/paths'
 import styles from './Login.module.css'
 
@@ -15,8 +15,8 @@ export default function Login() {
   return (
     <main className={styles.screen}>
       <header className={styles.intro}>
-        <h1 className={styles.title}>Signin to your PopX account</h1>
-        <p className={styles.body}>{LOREM_SUBTITLE}</p>
+        <h1 className={styles.title}>Sign in to your account</h1>
+        <p className={styles.body}>{LOGIN_BODY}</p>
       </header>
 
       <form className={styles.form} onSubmit={handleSubmit} noValidate>

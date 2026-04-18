@@ -1,6 +1,6 @@
 {
   "name": "eduvista-assessment",
-  "description": "Educase India internship: React UI from the provided Adobe XD file.",
+  "description": "React UI from the provided Adobe XD mobile screens.",
   "private": true,
   "version": "1.0.0",
   "type": "module",

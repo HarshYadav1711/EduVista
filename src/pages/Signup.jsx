@@ -27,7 +27,7 @@ export default function Signup() {
           <span className={styles.stepBadge} aria-label="Step 1">
             <span aria-hidden="true">1</span>
           </span>{' '}
-          PopX account
+          account
         </h1>
       </header>
 

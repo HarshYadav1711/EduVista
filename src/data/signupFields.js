@@ -1,12 +1,12 @@
-import { SAMPLE_EMAIL } from '../content/xdCopy'
+import { SAMPLE_DISPLAY_NAME, SAMPLE_EMAIL } from '../content/appCopy'
 
 export const signupFields = [
   {
     id: 'fullName',
     label: 'Full Name',
     type: 'text',
-    placeholder: 'Marry Doe',
-    defaultValue: 'Marry Doe',
+    placeholder: SAMPLE_DISPLAY_NAME,
+    defaultValue: SAMPLE_DISPLAY_NAME,
     required: true,
     autoComplete: 'name',
   },

@@ -1,5 +1,5 @@
 import { CameraIcon } from '../components/CameraIcon'
-import { PROFILE_BIO, SAMPLE_EMAIL } from '../content/xdCopy'
+import { PROFILE_BIO, SAMPLE_DISPLAY_NAME, SAMPLE_EMAIL } from '../content/appCopy'
 import styles from './Profile.module.css'
 
 const PROFILE_IMAGE_SRC = '/profile.svg'
@@ -16,7 +16,7 @@ export default function Profile() {
           <img
             className={styles.profileImage}
             src={PROFILE_IMAGE_SRC}
-            alt="Marry Doe"
+            alt={SAMPLE_DISPLAY_NAME}
             width={72}
             height={72}
             decoding="async"
@@ -27,7 +27,7 @@ export default function Profile() {
         </div>
         <div className={styles.meta}>
           <p id="profile-name" className={styles.name}>
-            Marry Doe
+            {SAMPLE_DISPLAY_NAME}
           </p>
           <p className={styles.email}>{SAMPLE_EMAIL}</p>
         </div>
