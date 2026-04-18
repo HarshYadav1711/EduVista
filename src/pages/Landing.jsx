@@ -9,7 +9,7 @@ export default function Landing() {
       <div className={styles.topSpace} aria-hidden="true" />
 
       <div className={styles.block}>
-        <h1 className={styles.title}>Welcome</h1>
+        <h1 className={styles.title}>Welcome to PopX</h1>
         <p className={styles.body}>{LANDING_BODY}</p>
 
         <nav className={styles.actions} aria-label="Sign up or sign in">
